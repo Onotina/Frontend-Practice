@@ -8,7 +8,8 @@ const data = [
     "meta": {
       "author": "",
       "date": "",
-      "time": ""
+      "time": "",
+      "link": "blog.html"
     },
     "comments": [],
     // "likes": 100

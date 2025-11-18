@@ -1,0 +1,57 @@
+/*---- General Styles ----*/
+.container {
+    padding-left: 3em;
+}
+h1.heading {
+    font-size: calc(var(--mobile-heading-size) + .7em);
+}
+form {
+    margin-top: 1em;
+}
+
+.form_item_container {
+    margin-bottom: 1.5em;
+}
+
+.form_item_container label {
+    display: block;
+}
+
+.form_item_container input,
+.form_item_container textarea {
+    width: 80%;
+    background-color: #a1363617;
+    border: none;
+    border-radius: 10px;
+}
+.form_item_container [type="file"] {
+    width: 17em;
+    display: block;
+    background-color: inherit;
+    border: 1px solid rgba(42, 42, 42, 0.388);
+}
+.form_item_container select {
+    padding: .7em 1em;
+    width: 80%;
+    background-color: inherit;
+    border: 1px solid rgba(42, 42, 42, 0.388);
+    border-radius: 10px;
+}
+
+img {
+    width: 150px;
+}
+
+
+/*--- button ----*/
+.form_action_container .btn {
+    width: 40%;
+    margin-top: 2em;
+}
+.form_action_container .primary {
+    background-color: var(--primary-color);
+    margin-right: 1em;
+}
+.form_action_container .accent {
+    background-color: var(--secondary-color);
+}

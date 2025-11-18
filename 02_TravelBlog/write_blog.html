@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Add Blog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- External Links -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=flight_takeoff,search&display=block" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Internal Links -->
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/write_blog.css">
+    </head>
+    <body>
+        <!-- Main Navigation Section of the Website --> 
+        <header class="container">
+            <nav class="main_navigation">
+                <a class="logo" href="#">
+                    <span class="material-symbols-outlined"> flight_takeoff </span>
+                    <span class="logo_text">Travel Blog</span>
+                </a>
+                <ul>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><span class="material-symbols-outlined">search</span></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Write Blog Section -->
+        <section class="container">
+             <h1 class="heading">
+                Write a Blog Post
+            </h1>
+            <form>
+                <p class="form_item_container">
+                    <label for="title">Title</label>
+                    <input type="text" id="blog_title" name="blog_title">
+                </p>
+                <p class="form_item_container">
+                    <label for="blog_image">Display Image</label>
+                    <img src="images/img_placeholder.png" alt="image placeholder">
+                    <input  type="file" name="blog_image">
+                </p>
+                <p class="form_item_container">
+                    <label for="blog_content">Blog Content</label>
+                    <textarea name="blog_content" id="blog_content" minlength="10" resize="disabled" rows="4"></textarea>
+                </p>
+                <p class="form_item_container">
+                    <label for="category">Category</label>
+                    <select name="category" id="category">
+                        <option value="adventure">Adventure</option>
+                        <option value="business">Business</option>
+                        <option value="safari">Safari</option>
+                    </select>
+                </p>
+
+                <p class="form_action_container">
+                    <button class="btn primary" id="publish">Publish</button>
+                    <button class="btn accent">Save Draft</button>
+                </p>
+            </form>
+        </section>
+        <script src="script/write_blog.js" type="module"></script>
+    </body>
+</html>
